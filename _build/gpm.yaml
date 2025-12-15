@@ -1,0 +1,10 @@
+name: HyvorTalk
+version: 0.0.1
+lowCaseName: hyvortalk
+namespace: \Matdave\HyvorTalk
+description: 'Hyvor Talk integration for MODX'
+author: matdave
+menus:
+    -
+        text: hyvortalk.menu
+        action: manage
