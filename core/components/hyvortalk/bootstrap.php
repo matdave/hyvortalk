@@ -10,7 +10,7 @@ require_once $namespace['path'] . 'vendor/autoload.php';
 if (!$modx->services->has('hyvortalk')) {
     // Register base class in the service container
     $modx->services->add('hyvortalk', function($c) use ($modx) {
-        return new \\Matdave\HyvorTalk\HyvorTalk($modx);
+        return new \MatDave\HyvorTalk\Service($modx);
     });
 
     // Load packages model, uncomment if you have DB tables

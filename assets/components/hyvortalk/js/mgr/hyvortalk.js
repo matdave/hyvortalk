@@ -1,8 +1,8 @@
-var \Matdave\HyvorTalk = function (config) {
+var HyvorTalk = function (config) {
     config = config || {};
-    \Matdave\HyvorTalk.superclass.constructor.call(this, config);
+    HyvorTalk.superclass.constructor.call(this, config);
 };
-Ext.extend(\Matdave\HyvorTalk, Ext.Component, {
+Ext.extend(HyvorTalk, Ext.Component, {
 
     page: {},
     window: {},
@@ -14,5 +14,5 @@ Ext.extend(\Matdave\HyvorTalk, Ext.Component, {
     config: {},
 
 });
-Ext.reg('hyvortalk', \Matdave\HyvorTalk);
-hyvortalk = new \Matdave\HyvorTalk();
+Ext.reg('hyvortalk', HyvorTalk);
+hyvortalk = new HyvorTalk();

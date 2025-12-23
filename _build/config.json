@@ -1,0 +1,175 @@
+{
+  "name": "HyvorTalk",
+  "version": "0.0.1",
+  "lowCaseName": "hyvortalk",
+  "description": "Hyvor Talk integration for MODX",
+  "author": "matdave",
+  "package": {
+    "menus": [
+      {
+        "text": "hyvortalk.menu",
+        "action": "manage"
+      }
+    ],
+    "systemSettings": [
+      {
+        "key": "page_identifier",
+        "value": "id",
+        "area": "comments"
+      },
+      {
+        "key": "website_id",
+        "area": "comments"
+      },
+      {
+        "key": "private_key",
+        "area": "users"
+      },
+      {
+        "key": "sso_enabled",
+        "type": "combo-boolean",
+        "value": "0",
+        "area": "users"
+      },
+      {
+        "key": "encryption_key",
+        "area": "gated_content"
+      },
+      {
+        "key": "console_key",
+        "area": "gated_content"
+      }
+    ],
+    "elements": {
+      "chunks": [
+        {
+          "name": "hyvortalk-comment-counts",
+          "file": "comment-counts.tpl"
+        },
+        {
+          "name": "hyvortalk-comments",
+          "file": "comments.tpl"
+        },
+        {
+          "name": "hyvortalk-gated-content",
+          "file": "gated-content.tpl"
+        },
+        {
+          "name": "hyvortalk-memberships",
+          "file": "memberships.tpl"
+        }
+      ],
+      "snippets": [
+        {
+          "name": "htComments",
+          "file": "comments.php",
+          "properties": [
+            {
+              "name": "page"
+            },
+            {
+              "name": "tpl",
+              "value": "hyvortalk-comments"
+            },
+            {
+              "name": "addJS",
+              "type": "combo-boolean",
+              "value": "1"
+            },
+            {
+              "name": "pageTitle"
+            },
+            {
+              "name": "language",
+              "value": "[[++cultureKey]]"
+            },
+            {
+              "name": "loading",
+              "value": "default"
+            },
+            {
+              "name": "settings",
+              "value": "{}"
+            }
+          ]
+        },
+        {
+          "name": "htCommentCounts",
+          "file": "comment-counts.php",
+          "properties": [
+            {
+              "name": "page"
+            },
+            {
+              "name": "tpl",
+              "value": "hyvortalk-comment-counts"
+            },
+            {
+              "name": "addJS",
+              "type": "combo-boolean",
+              "value": "1"
+            },
+            {
+              "name": "language",
+              "value": "[[++cultureKey]]"
+            },
+            {
+              "name": "mode",
+              "value": "number"
+            }
+          ]
+        },
+        {
+          "name": "htGatedContent",
+          "file": "gated-content.php",
+          "properties": [
+            {
+              "name": "page"
+            },
+            {
+              "name": "tpl",
+              "value": "hyvortalk-gated-content"
+            },
+            {
+              "name": "defaultTitle"
+            },
+            {
+              "name": "defaultContent"
+            },
+            {
+              "name": "minimumPlan"
+            }
+          ]
+        },
+        {
+          "name": "htMemberships",
+          "file": "memberships.php",
+          "properties": [
+            {
+              "name": "tpl",
+              "value": "hyvortalk-memberships"
+            },
+            {
+              "name": "addJS",
+              "type": "combo-boolean",
+              "value": "1"
+            },
+            {
+              "name": "language",
+              "value": "[[++cultureKey]]"
+            }
+          ]
+        }
+      ],
+      "plugins": [
+        {
+          "name": "HyvorTalk",
+          "file": "hyvortalk.php",
+          "events": [
+            "OnTVInputRenderList"
+          ]
+        }
+      ]
+    }
+  }
+}

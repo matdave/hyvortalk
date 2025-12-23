@@ -1,0 +1,10 @@
+<hyvor-talk-comments
+        [[+user]]
+        [[+hash]]
+        loading="[[+loading]]"
+        website-id="[[+websiteId]]"
+        page-id="[[+pageId]]"
+        settings="[[+settings]]"
+        page-title="[[+pageTitle]]"
+        page-language="[[+language]]"
+></hyvor-talk-comments>
