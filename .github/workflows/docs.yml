@@ -1,0 +1,15 @@
+name: Docs
+on:
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - uses: redkubes/docusaurus-deploy-action@v1
+        with:
+          source-folder: docs
+          git-user: matdave
+          git-password: ${{ secrets.GITHUB_TOKEN }}
+          deployment-branch: gh-pages
