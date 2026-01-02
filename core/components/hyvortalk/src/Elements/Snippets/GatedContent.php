@@ -31,7 +31,6 @@ class GatedContent extends Snippet
         $minimumPlan = $this->modx->getOption('minimumPlan', $this->scriptProperties, null);
         $pageId = $this->modx->getOption('hyvortalk.page_identifier', $this->modx->config, 'id');
         $tpl = $this->modx->getOption('tpl', $this->scriptProperties, null, true) ?? 'hyvortalk-gated-content';
-        $addJS = (bool) $this->modx->getOption('addJS', $this->scriptProperties, true);
 
         $content = [
             'page-id' => $resource->get($pageId),
