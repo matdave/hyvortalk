@@ -54,7 +54,15 @@ const config: Config = {
       } satisfies Preset.Options,
     ],
   ],
-
+  headTags: [
+    {
+      tagName: 'meta',
+      attributes: {
+        name: 'algolia-site-verification',
+        content: '1DCB3F272E966A08',
+      }
+    }
+  ],
   themeConfig: {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
