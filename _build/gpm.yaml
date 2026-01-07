@@ -4,7 +4,3 @@ lowCaseName: hyvortalk
 namespace: MatDave\HyvorTalk
 description: 'Hyvor Talk integration for MODX'
 author: matdave
-menus:
-    -
-        text: hyvortalk.menu
-        action: manage
