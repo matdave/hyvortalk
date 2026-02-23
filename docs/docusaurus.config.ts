@@ -106,7 +106,7 @@ const config: Config = {
           items: [
             {
               label: 'Hyvor Talk',
-              href: 'https://talk.hyvor.com/',
+              href: 'https://talk.hyvor.com/?partner=matdave',
             },
           ],
         },

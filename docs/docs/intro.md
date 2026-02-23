@@ -8,7 +8,7 @@ Let's discover **Hyvor Talk in less than 5 minutes**.
 
 ## Getting Started
 
-You will need a Hyvor Talk account. If you don't have one, you can sign up [here](https://talk.hyvor.com/console?signup).
+You will need a Hyvor Talk account. If you don't have one, you can sign up [here](https://talk.hyvor.com/?partner=matdaveconsole?signup).
 
 Once you have an account, you can create a new site in the Hyvor Talk Console. This site will represent your website or 
 blog where you want to add the comment section.

@@ -13,7 +13,7 @@ const FeatureList: FeatureItem[] = [
     title: 'Sign up',
     description: (
       <>
-        <a href="https://talk.hyvor.com/console?signup">Register for Hyvor Talk</a> and enter your website's details in the Console.
+        <a href="https://talk.hyvor.com/console?signup&partner=matdave">Register for Hyvor Talk</a> and enter your website's details in the Console.
       </>
     ),
   },
